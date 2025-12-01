@@ -1,0 +1,3 @@
+C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/nonogram_solver.dir
+C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/edit_cache.dir
+C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/rebuild_cache.dir
