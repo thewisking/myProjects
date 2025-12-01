@@ -1,4 +1,8 @@
 #include "../include/nonogram_solution.h"
+#include "../include/nonogram_solver_strategy.h"
+#include "../include/nonogram_solvers/guessing_nonogram_solver.h"
+#include "../include/nonogram_solvers/logical_nonogram_solver.h"
+
 #include <iostream>
 int main() {
     system("cls");
