@@ -1346,3 +1346,137 @@ events:
       Running the CXX compiler's linker: "C:/my_programs/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.45
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/my_programs/msys64/mingw64/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/3.31.4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-mwmhsj"
+      binary: "C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-mwmhsj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-mwmhsj'
+        
+        Run Build Command(s): C:/my_programs/Cmake/bin/cmake.exe -E env VERBOSE=1 C:/my_programs/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_49c69/fast
+        C:/my_programs/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_49c69.dir\\build.make CMakeFiles/cmTC_49c69.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-mwmhsj'
+        Building CXX object CMakeFiles/cmTC_49c69.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\my_programs\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_49c69.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\my_programs\\Cmake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\my_programs\\msys64\\mingw64\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_49c69.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_49c69.dir\\'
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\my_programs\\Cmake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_49c69.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Wissa\\AppData\\Local\\Temp\\ccfh5IwE.s
+        GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"
+        ignoring duplicate directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"
+        ignoring duplicate directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+        ignoring nonexistent directory "D:/M/msys64/mingw64/include"
+        ignoring nonexistent directory "/mingw64/include"
+        ignoring duplicate directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+        ignoring nonexistent directory "C:/my_programs/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "D:/M/msys64/mingw64/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
+        End of search list.
+        Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_49c69.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_49c69.dir\\'
+         C:/my_programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_49c69.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Wissa\\AppData\\Local\\Temp\\ccfh5IwE.s
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_49c69.dir\\build.make:80: CMakeFiles/cmTC_49c69.dir/CMakeCXXCompilerABI.cpp.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-mwmhsj'
+        mingw32-make: *** [Makefile:133: cmTC_49c69/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/my_programs/Cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/my_programs/msys64/mingw64/bin/c++.exe"
+    directories:
+      source: "C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-ktrbva"
+      binary: "C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-ktrbva"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-ktrbva'
+        
+        Run Build Command(s): C:/my_programs/Cmake/bin/cmake.exe -E env VERBOSE=1 C:/my_programs/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5069d/fast
+        C:/my_programs/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5069d.dir\\build.make CMakeFiles/cmTC_5069d.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-ktrbva'
+        Building CXX object CMakeFiles/cmTC_5069d.dir/testCXXCompiler.cxx.obj
+        C:\\my_programs\\msys64\\mingw64\\bin\\c++.exe    -o CMakeFiles\\cmTC_5069d.dir\\testCXXCompiler.cxx.obj -c C:\\Users\\Wissa\\Desktop\\C++\\myProjects\\small_projects\\nonogram_solver\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ktrbva\\testCXXCompiler.cxx
+        Linking CXX executable cmTC_5069d.exe
+        C:\\my_programs\\Cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_5069d.dir\\link.txt --verbose=1
+        C:\\my_programs\\Cmake\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_5069d.dir/objects.a
+        C:\\my_programs\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5069d.dir/objects.a @CMakeFiles\\cmTC_5069d.dir\\objects1.rsp
+        C:\\my_programs\\msys64\\mingw64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_5069d.dir/objects.a -Wl,--no-whole-archive -o cmTC_5069d.exe -Wl,--out-implib,libcmTC_5069d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5069d.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/Wissa/Desktop/C++/myProjects/small_projects/nonogram_solver/build/CMakeFiles/CMakeScratch/TryCompile-ktrbva'
+        
+      exitCode: 0
+...
